@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const API_KEY = process.env.TWELVE_DATA_API_KEY || "6c649974394243c18f090b62b742a720";
+const API_KEY = process.env.TWELVE_DATA_API_KEY;
 
 // api call to retreive the stock data
 export const fetchCryptoOHLC = async (symbol: string, timeInterval: string) => {
